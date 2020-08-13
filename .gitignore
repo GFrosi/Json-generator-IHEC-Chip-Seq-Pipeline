@@ -131,4 +131,5 @@ dmypy.json
 #my json file
 chipseq_json_generator/all-h3k4me3-slurm-12ctrl-12rep.json
 
-
+#DS Store
+chipseq_json_generator/.DS_Store
