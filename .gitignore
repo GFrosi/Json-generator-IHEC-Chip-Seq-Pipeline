@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#my json file
+chipseq_json_generator/all-h3k4me3-slurm-12ctrl-12rep.json
+
+
