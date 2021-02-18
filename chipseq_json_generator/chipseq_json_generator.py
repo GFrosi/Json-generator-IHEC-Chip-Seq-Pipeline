@@ -3,11 +3,12 @@ from util.read_category_table import read_table, read_sample
 from util.read_config import read_config
 import os 
 
-'''Function to print an input json.file for the IHEC pipeline. Config is a base json file 
-(json_config.ini) with the basic parameters to run the pipleine. Chip_ctl and Chip treat are 
-strings that contains the replicate tag and the path to SRR files'''
 
 def print_json(config, chip_ctl, chip_treat):
+
+    '''Function to print an input json.file for the IHEC pipeline. Config is a base json file 
+    (json_config.ini) with the basic parameters to run the pipleine. Chip_ctl and Chip treat are 
+    strings that contains the replicate tag and the path to SRR files'''
 
     print('{')
     print(chip_ctl)
@@ -32,12 +33,13 @@ def add_path(list_of_srr, srr_path, number):
 
         return list_with_path_R1, list_with_path_R2
 
-'''This function organize the information about control and treat replicates for the json input file 
-Ctl and treat are dictionaries with the control and treat sample and their SRR (or SRRs) information, 
-respectively. Sample is a dictionary with GSM as key and sequence type (single or paired end) as its value.
-The srr_path is the absolut directory path for the SRR files. It is passed as args.path (see def_main)'''
 
 def prepare_sample_json(ctl, treat, sample, srr_path):
+    '''This function organize the information about control and IP replicates for the json input file. 
+    Ctl and treat are dictionaries with the control and IP sample and their SRR (or SRRs) information, 
+    respectively. Sample is a dictionary with GSM as key and sequence type (single or paired end) as its value.
+    The srr_path is the absolut directory path for the SRR files. It is passed as args.path (see def_main)'''
+    
     chip_ctl = ''
     chip_treat = ''
 

@@ -73,8 +73,6 @@ def write_file(list_md5):
         f.write('\n'.join(list_md5))
     
 
-
-
 def main():
     hg = open_json(args.path)
     md5sum = open(args.list, 'r')
@@ -85,8 +83,6 @@ def main():
     #print(len(list_hg19_md5))
     #print(list_no_match)
     
-
-
 
 if __name__ == '__main__':
     

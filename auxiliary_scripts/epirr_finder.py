@@ -34,15 +34,5 @@ with open(file_n) as f:
                 
 print(keys_dict)        
              
-            #checking release group
-            # if elem == 'ihec_data_portal':
-            #     #list_rg.append(hg['datasets'][i][elem]['releasing_group'])
-                
-            #     if hg['datasets'][i][elem]['releasing_group'] == 'Roadmap':
-            #         ctn +=1
-            #         #print(hg['datasets'][i][elem]['releasing_group'])
-
-#print(ctn)      
-
 
 
